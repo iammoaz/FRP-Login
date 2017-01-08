@@ -54,14 +54,54 @@
 		414B53971E22E5F80077F9D8 /* FRP Login */ = {
 			isa = PBXGroup;
 			children = (
-				414B53981E22E5F80077F9D8 /* AppDelegate.swift */,
-				414B539A1E22E5F80077F9D8 /* ViewController.swift */,
-				414B539C1E22E5F80077F9D8 /* Main.storyboard */,
-				414B539F1E22E5F80077F9D8 /* Assets.xcassets */,
-				414B53A11E22E5F80077F9D8 /* LaunchScreen.storyboard */,
-				414B53A41E22E5F80077F9D8 /* Info.plist */,
+				414B53AE1E22E6AC0077F9D8 /* Model */,
+				414B53AD1E22E6A60077F9D8 /* View */,
+				414B53AC1E22E69E0077F9D8 /* Controller */,
+				414B53AB1E22E6980077F9D8 /* Resources */,
+				414B53AA1E22E68C0077F9D8 /* Supporting Files */,
 			);
 			path = "FRP Login";
+			sourceTree = "<group>";
+		};
+		414B53AA1E22E68C0077F9D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				414B53981E22E5F80077F9D8 /* AppDelegate.swift */,
+				414B53A41E22E5F80077F9D8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		414B53AB1E22E6980077F9D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				414B539F1E22E5F80077F9D8 /* Assets.xcassets */,
+				414B53A11E22E5F80077F9D8 /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		414B53AC1E22E69E0077F9D8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				414B539A1E22E5F80077F9D8 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		414B53AD1E22E6A60077F9D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				414B539C1E22E5F80077F9D8 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		414B53AE1E22E6AC0077F9D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
