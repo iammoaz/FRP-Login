@@ -12,9 +12,11 @@
 		414B539E1E22E5F80077F9D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 414B539C1E22E5F80077F9D8 /* Main.storyboard */; };
 		414B53A01E22E5F80077F9D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 414B539F1E22E5F80077F9D8 /* Assets.xcassets */; };
 		414B53A31E22E5F80077F9D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 414B53A11E22E5F80077F9D8 /* LaunchScreen.storyboard */; };
+		AC4A5380127A6AE737EF837B /* Pods_FRP_Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C680AB0D3AF370DFB205CA7E /* Pods_FRP_Login.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09CF9DF30D6CB942B48114A9 /* Pods-FRP Login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRP Login.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FRP Login/Pods-FRP Login.debug.xcconfig"; sourceTree = "<group>"; };
 		414B53951E22E5F80077F9D8 /* FRP Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FRP Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		414B53981E22E5F80077F9D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		414B539A1E22E5F80077F9D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		414B539F1E22E5F80077F9D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		414B53A21E22E5F80077F9D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		414B53A41E22E5F80077F9D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B995FE8D0D0922CB22951D5E /* Pods-FRP Login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRP Login.release.xcconfig"; path = "Pods/Target Support Files/Pods-FRP Login/Pods-FRP Login.release.xcconfig"; sourceTree = "<group>"; };
+		C680AB0D3AF370DFB205CA7E /* Pods_FRP_Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FRP_Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC4A5380127A6AE737EF837B /* Pods_FRP_Login.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185061266E8EEDBA60B87DC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09CF9DF30D6CB942B48114A9 /* Pods-FRP Login.debug.xcconfig */,
+				B995FE8D0D0922CB22951D5E /* Pods-FRP Login.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		292F15440CC504276514C7B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C680AB0D3AF370DFB205CA7E /* Pods_FRP_Login.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		414B538C1E22E5F70077F9D8 = {
 			isa = PBXGroup;
 			children = (
 				414B53971E22E5F80077F9D8 /* FRP Login */,
 				414B53961E22E5F80077F9D8 /* Products */,
+				185061266E8EEDBA60B87DC5 /* Pods */,
+				292F15440CC504276514C7B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 414B53A71E22E5F80077F9D8 /* Build configuration list for PBXNativeTarget "FRP Login" */;
 			buildPhases = (
+				99FBC3171A2E6BCBA2116773 /* [CP] Check Pods Manifest.lock */,
 				414B53911E22E5F70077F9D8 /* Sources */,
 				414B53921E22E5F70077F9D8 /* Frameworks */,
 				414B53931E22E5F70077F9D8 /* Resources */,
+				D4C2652898624D7D9AE8335F /* [CP] Embed Pods Frameworks */,
+				9E28292CB500B904B81E893D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -171,6 +198,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		99FBC3171A2E6BCBA2116773 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9E28292CB500B904B81E893D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FRP Login/Pods-FRP Login-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4C2652898624D7D9AE8335F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FRP Login/Pods-FRP Login-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		414B53911E22E5F70077F9D8 /* Sources */ = {
@@ -244,7 +319,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -287,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -297,7 +372,9 @@
 		};
 		414B53A81E22E5F80077F9D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09CF9DF30D6CB942B48114A9 /* Pods-FRP Login.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 69CH9UTLK7;
 				INFOPLIST_FILE = "FRP Login/Info.plist";
@@ -310,7 +387,9 @@
 		};
 		414B53A91E22E5F80077F9D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B995FE8D0D0922CB22951D5E /* Pods-FRP Login.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 69CH9UTLK7;
 				INFOPLIST_FILE = "FRP Login/Info.plist";
@@ -340,6 +419,7 @@
 				414B53A91E22E5F80077F9D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
